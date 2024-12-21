@@ -1,47 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Simple Web Code
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet"/>
-  <style>
-   #splashScreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 50;
-        }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Code</title>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-        .loader {
-            border-top-color: #3498db;
-            border-right-color: #e74c3c;
-            border-bottom-color: #f1c40f;
-            border-left-color: #2ecc71;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-  </style>
- </head>
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
  <body class="bg-gray-100 text-gray-800 relative">
   <div id="splashScreen">
    <div class="text-center">
@@ -52,10 +21,6 @@
     </h2>
    </div>
   </div>
-  <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover z-0">
-   <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
-   Your browser does not support the video tag.
-  </video>
   <audio autoplay loop>
    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
    Your browser does not support the audio element.
@@ -97,62 +62,82 @@
      </div>
     </div>
    </nav>
-   <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold text-center mb-4 text-white">
-     TESTIMONI
-    </h1>
-    <h2 class="text-xl text-center mb-8 text-white">
-     BILA INGIN LEBIHNYA BISA LIHAT DI INSTAGRAM
-    </h2>
-    <div class="swiper mySwiper">
-     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="1.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="2.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="3.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="4.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="5.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="6.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="7.jpg" width="600"/>
-      </div>
-      <div class="swiper-slide">
-       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="8.jpg" width="600"/>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
-  </script>
-  <script>
-   var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 15,
-                stretch: 0,
-                depth: 300,
-                modifier: 1,
-                slideShadows: true,
-            },
-            loop: true,
-        });
+      <div class="container mx-auto p-4">
+    <h1>TESTIMONI</h1>
+  <h2>BILA INGIN LEBIHNYA BISA LIHAT DI INSTAGRAM</h2>
 
-        document.getElementById('menuButton').addEventListener('click', function() {
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="3.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="4.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="5.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="6.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="7.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="8.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="3.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="4.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="5.jpg" alt="">
+      </div>
+    </div>
+
+      <!-- 15 div -->
+    
+    </div>
+  </div>
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 15,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+    
+    document.getElementById('menuButton').addEventListener('click', function() {
             var menuDropdown = document.getElementById('menuDropdown');
             if (menuDropdown.classList.contains('hidden')) {
                 menuDropdown.classList.remove('hidden');
@@ -165,8 +150,8 @@
             setTimeout(function() {
                 var splashScreen = document.getElementById('splashScreen');
                 splashScreen.style.display = 'none';
-            }, 5000); // 60000 milliseconds = 1 minute
+            }, 60000); // 60000 milliseconds = 1 minute
         });
   </script>
- </body>
+</body>
 </html>
