@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Code</title>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body class="bg-gray-100 text-gray-800 relative">
+  <div id="splashScreen">
+   <div class="text-center">
+    <div class="loader ease-linear rounded-full border-8 border-t-8 h-32 w-32 mb-4">
+    </div>
+    <h2 class="text-center text-gray-700 text-xl font-semibold">
+     Loading...
+    </h2>
+   </div>
+  </div>
+  <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover z-0">
+   <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+   Your browser does not support the video tag.
+  </video>
+  <audio autoplay loop>
+   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
+   Your browser does not support the audio element.
+  </audio>
+  <div class="relative z-10">
+   <nav class="bg-white bg-opacity-75 shadow-md">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+     <a class="text-2xl font-bold" href="#">
+      MyWebsite
+     </a>
+     <div class="relative">
+      <button class="text-gray-700 hover:text-gray-900 flex items-center" id="menuButton">
+       <i class="fas fa-bars mr-2">
+       </i>
+       Menu
+      </button>
+      <ul class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg hidden" id="menuDropdown">
+       <li>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+         Services
+        </a>
+       </li>
+       <li>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+   <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-4 text-white">
+     TESTIMONI
+    </h1>
+    <h2 class="text-xl text-center mb-8 text-white">
+     BILA INGIN LEBIHNYA BISA LIHAT DI INSTAGRAM
+    </h2>
+    <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="1.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="2.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="3.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="4.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="5.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="6.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="6.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="7.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="8.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="9.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="https://storage.googleapis.com/a1aa/image/5xpiCmAr87L3BhG8kVlpnrEgDslLugOtNkkIfHCHu4cdIgeTA.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="https://storage.googleapis.com/a1aa/image/5xpiCmAr87L3BhG8kVlpnrEgDslLugOtNkkIfHCHu4cdIgeTA.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="https://storage.googleapis.com/a1aa/image/5xpiCmAr87L3BhG8kVlpnrEgDslLugOtNkkIfHCHu4cdIgeTA.jpg" width="600"/>
+      </div>
+      <div class="swiper-slide">
+       <img alt="A placeholder image with dimensions 600x400 showing a simple pattern or color" height="400" src="https://storage.googleapis.com/a1aa/image/5xpiCmAr87L3BhG8kVlpnrEgDslLugOtNkkIfHCHu4cdIgeTA.jpg" width="600"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+  </script>
+   <!-- Link ke file JavaScript -->
+  <script src="script.js"></script>
+ </body>
+</html>
